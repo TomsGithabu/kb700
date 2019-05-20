@@ -1,0 +1,30 @@
+
+.advertisement{
+    /*border: solid 1px red;*/
+    background-color: #feffe6;
+    color: #ff0000;
+    font-weight: bold;
+    width: 1000px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.advertisement img{
+    width: 40px;
+    height: 50px;
+    /*border: solid 1px red;*/
+    float: left;
+}
+.advertisement div{
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.advertisement a{
+    color: #008000;
+}
+.advertisement a:hover{
+    text-decoration: none;
+    color: #0000ff;
+}

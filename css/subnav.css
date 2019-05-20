@@ -1,0 +1,102 @@
+.subnav{
+    min-width: 900px;
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: #1c7ab8;
+    /*border: solid 1px green;*/
+}
+
+.subnav img{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-bottom: -3px;
+    /*float: left;*/
+}
+
+.subnav li:hover{
+    background-color: #000000;
+}
+
+.subnav ul{
+    float: left;
+    margin-left: 80px;
+    width: 700px;
+    height: 45px;
+    line-height: 45px;
+    /*border: solid 1px red;*/
+}
+.subnav li{
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    list-style: none;
+    color: #ffffff;
+    font-weight: bold;
+    /*border: solid 1px red;*/
+    display: inline-block;
+    text-align: center;
+}
+.subnav li:hover{
+    background-color: #000000;
+}
+
+#blue{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: blue;
+    border: solid 1px #aaaaaa;
+}
+#green{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: green;
+    border: solid 1px #aaaaaa;
+}
+#red{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: red;
+    border: solid 1px #aaaaaa;
+}
+#orange{
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: orange;
+    border: solid 1px #aaaaaa;
+}
+
+.subnav_record{
+    /*border: solid 1px red;*/
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    /*float: left;*/
+    color: #ffffff;
+    font-weight: bold;
+    clear: both;
+}
+.changecolor{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    /*border: solid 1px red;*/
+}
+.changecolor li {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    left: 10px;
+}
+.changecolor li:hover{
+    cursor: pointer;/*鼠标放上去，手指样式*/
+}
+

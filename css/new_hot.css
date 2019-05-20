@@ -1,0 +1,107 @@
+.new_hot{
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    border: solid 1px grey;
+}
+.new_hot ul{
+    width: 900px;
+    height: 35px;
+    /*border: solid 1px blue;*/
+}
+.new_hot ul li{
+    width: 148px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    background-color: #eeeeee;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 15px;
+    border: solid 1px blue;
+    /*border-top: solid 3px red;*/
+    float: left;
+}
+.new_hot li:hover{
+    border-top: solid 3px black;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-bottom: none;
+}
+.new_hot li{
+    list-style: none;
+}
+
+.hotMain{
+    width: 900px;
+    height: 360px;
+    position: absolute;
+    background: #ffffff;
+    border: solid 1px green;
+}
+
+.hotMain:nth-child(1){
+    z-index: 1;
+}
+.hotItem{
+    width: calc(100% / 6);
+    height: 70%;
+    overflow: hidden;
+    font-size: 15px;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    /*border: solid 1px blue;*/
+
+}
+.hotItem img{
+    /*border: solid 1px blue;*/
+    height: 70%;
+    position: relative;
+    margin: 10px auto;
+    text-align: justify;
+}
+.hotItem img:hover{
+    border: solid 1px #00008b;
+}
+.hotItem a{
+    text-decoration: none;
+    color: #000000;
+}
+.hotItem a:hover{
+    text-decoration: underline;
+    color: #00008b;
+}
+.new_hot_items{
+    width: 900px;
+    height: 160px;
+    position: relative;
+    margin: 200px auto;
+    border: solid 2px green;
+}
+.new_hot_items table{
+    margin: 40px 0 0 20px;
+    /*border: solid 2px red;*/
+    border-collapse: collapse;
+}
+
+.new_hot_items td{
+    width: 300px;
+    height: 36px;
+    border-collapse: collapse;
+    font-size: 10px;
+    overflow: hidden;
+    /*border: solid 1px red;*/
+}
+.new_hot_items td h7{
+    color: #C71585;
+}
+.new_hot_items a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 10px;
+}
+.new_hot_items a:hover{
+    text-decoration: underline;
+    color:#00008b;
+}

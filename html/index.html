@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/bottom.css">
+    <link rel="stylesheet" href="../css/left.css">
+    <link rel="stylesheet" href="../css/right.css">
+    <link rel="stylesheet" href="../css/center.css">
+    <link rel="stylesheet" href="../css/subnav.css">
+    <link rel="stylesheet" href="../css/classify.css">
+    <link rel="stylesheet" href="../css/nav_movies.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/advertisement.css">
+    <link rel="stylesheet" href="../css/new_hot.css">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .item{
+            display: inline-block;
+            float: left;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .part{
+            width: calc(100% - 330px);
+        }
+        .all{
+            width: calc(100% - 30px);
+        }
+
+    </style>
+</head>
+<body>
+<!--顶部导航栏-->
+    <div class="nav">
+
+        <img src="../image/logo.jpg" alt="" style="float: left">
+        <!--<div class="nav_search">-->
+        <input type="text" value="请输入关键词搜索" onfocus="if(value=='请输入关键词搜索')value=''" onblur="if(!value)value='请输入关键词搜索'" />
+        <a href="#"><img src="../image/search.jpg" alt=""></a>
+        <!--</div>-->
+        <div class="nav_items">
+            <ul>
+                <a href="#"><li>新首页</li></a>
+                <a href="#"><li>电视剧</li></a>
+                <a href="#"><li>电影</li></a>
+                <a href="#"><li>动漫</li></a>
+                <a href="#"><li>综艺</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="bottom">
+        <div class="item" id="left">1</div>
+        <div class="item" id="center">
+            123
+        </div>
+
+        <div class="item part" id="right">
+            <!--子导航-->
+            <div class="subnav">
+                <div>
+                    <ul>
+                        <a href="#"><li><img src="../image/homepage1.png" alt=""></li></a>
+                        <a href="#"><li>电影</li></a>
+                        <a href="#"><li>电视剧</li></a>
+                        <a href="#"><li>动漫</li></a>
+                        <a href="#"><li>综艺</li></a>
+                        <a href="#"><li>微电影</li></a>
+                    </ul>
+                </div>
+                <div class="subnav_record">
+                    <span>播放记录</span>
+                    <div class="changecolor">
+                        <li id="blue"></li>
+                        <li id="green"></li>
+                        <li id="red"></li>
+                        <li id="orange"></li>
+                    </div>
+                    <!--<ul id="skin">-->
+                    <!--<li id="skin-blue" class="selected" title="蓝色">-->
+                    <!--<i></i></li><li id="skin-green" title="绿色" class="">-->
+                    <!--<i></i></li><li id="skin-red" title="红色" class="">-->
+                    <!--<i></i></li><li id="skin-orange" title="橙色" class=""><i></i>-->
+                    <!--</li></ul>-->
+                </div>
+            </div>
+            <!--顶部栏的分类-->
+            <div class="classify">
+                <div class="nav_television">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>电视剧:</span>
+                    <ul>
+                        <li><a href="#">国产剧</a></li>&nbsp;|
+                        <li><a href="#">香港剧</a></li>&nbsp;|
+                        <li><a href="#">台湾剧</a></li>&nbsp;|
+                        <li><a href="#">韩国剧</a></li>&nbsp;|
+                        <li><a href="#">日本剧</a></li>&nbsp;|
+                        <li><a href="#">欧美剧</a></li>&nbsp;|
+                        <li><a href="#">海外剧</a></li>
+                    </ul>
+                </div>
+                <div class="nav_movies">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>电影:</span>
+                    <ul>|
+                        <li><a href="#">喜剧片</a></li>&nbsp;|
+                        <li><a href="#">动作片</a></li>&nbsp;|
+                        <li><a href="#">科幻片</a></li>&nbsp;|
+                        <li><a href="#">恐怖片</a></li>&nbsp;|
+                        <li><a href="#">爱情片</a></li>&nbsp;|
+                        <li><a href="#">战争片</a></li>&nbsp;|
+                        <li><a href="#">剧情片</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--中间搜索栏-->
+            <div class="search">
+                <div>
+                    <a href="#"><img src="../image/logo1.jpg" alt=""></a>
+                    <input type="text" placeholder="请输入影片片名或演员名" onfocus="if(placeholder=='请输入影片片名或演员名')placeholder=''" onblur="if(!placeholder)placeholder='请输入影片片名或演员名'" />
+                    <a href="#"><img id="search_img" src="../image/search1.png" style="width: 25px" alt=""></a>
+
+
+                </div>
+                <div class="search_hot">
+                    <a href="">前任3：再见前任</a>
+                    <a href="">妖铃铃</a>
+                    <a href="">解忧杂货店</a>
+                    <a href="">虎啸龙吟</a>
+                    <a href="">琅琊榜之风起长</a>
+                    <a href="">凤囚凰</a>
+                    <a href="">海上牧云记</a>
+                </div>
+                <div class="search_items">
+                    <ul>
+                        <a href="#"><li>最近<br/>更新</li></a>
+                        <a href="#"><li>最近<br/>更新</li></a>
+                        <a href="#"><li>最近<br/>更新</li></a>
+                        <a href="#"><li>最近<br/>更新</li></a>
+                        <a href="#"><li>最近<br/>更新</li></a>
+                    </ul>
+                </div>
+            </div>
+            <!--中间广告-->
+            <div class="advertisement">
+                <img src="../image/advertisement.jpg" alt="" />
+                <div>
+                    看吧网<a href="#">v.kb95.com</a>非常好记，为了持续发展望各位网友帮忙宣传下本站,可以去经常上的论坛,微博,QQ群等发下本站网址... 本站公众号KB4410
+                </div>
+            </div>
+            <!--中间最新各电影推荐-->
+            <div class="new_hot"><!--最新热门推荐-->
+                <div class="new_hot_frame"><!--frame:框 热门推荐栏-->
+                    <ul>
+                        <li>最热门影片推荐</li>
+                        <li>最新电视剧</li>
+                        <li>最新电影</li>
+                        <li>最新动漫</li>
+                        <li>最新综艺</li>
+                        <li>最新微电影</li>
+                        <!--<li id="homepage_hot_music">热门音乐MV</li>-->
+                    </ul>
+                </div>
+                <!--最新热门推荐详情加图片-->
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/doutinghao.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                       <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                       <h4><a href="#">新喜剧之王</a></h4>
+                            <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                       <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                       <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                       <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/darenwu.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/darenwu.jpg" alt="">
+                        </a>
+                        <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/darenwu.jpg" alt="">
+                        </a>
+                        <h4><a href="#">新喜剧之王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/darenwu.jpg" alt="">
+                        </a>
+                        <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/fengkuangdewaixingren.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fengkuangdewaixingren.jpg" alt="">
+                        </a>
+                        <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fengkuangdewaixingren.jpg" alt="">
+                        </a>
+                        <h4><a href="#">新喜剧之王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fengkuangdewaixingren.jpg" alt="">
+                        </a>
+                        <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fengkuangdewaixingren.jpg" alt="">
+                        </a>
+                        <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/fuermoshinai.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fuermoshinai.jpg" alt="">
+                        </a>
+                        <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fuermoshinai.jpg" alt="">
+                        </a>
+                        <h4><a href="#">新喜剧之王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/fuermoshinai.jpg" alt="">
+                        </a>
+                        <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/baisheyuanqi.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/baisheyuanqi.jpg" alt="">
+                        </a>
+                        <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/baisheyuanqi.jpg" alt="">
+                        </a>
+                        <h4><a href="#">新喜剧之王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/baisheyuanqi.jpg" alt="">
+                        </a>
+                        <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="hotMain">
+                    <div class="hotItem">
+                        <a href="#"><img src="../image/haiwang.jpg" alt=""></a>
+                        <!--<span>分类图标</span>-->
+                        <h4><a href="#">疯狂的外星人</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/haiwang.jpg" alt="">
+                        </a>
+                        <h4><a href="#">绿皮书</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/haiwang.jpg" alt="">
+                        </a>
+                        <h4><a href="#">新喜剧之王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                            </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/haiwang.jpg" alt="">
+                        </a>
+                        <h4><a href="#">白蛇：缘起</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">大人物/中国版老手</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                    <div class="hotItem">
+                        <a href="#">
+                            <img src="../image/doutinghao.jpg" alt="">
+                        </a>
+                        <h4><a href="#">海王</a></h4>
+                        <span>
+                            <h4><a href="#">沈磊</a>&nbsp;<a href="#">翟巍</a>&nbsp;<a href="#">吴磊</a></h4>
+                        </span>
+                    </div>
+                </div>
+                <!--最新热门推荐详情不包含图片。图片有六张，这里接着从第七个开始-->
+                <div class="new_hot_items">
+                <div>
+                    <table>
+                        <tr>
+                            <td><h7>07.</h7>&nbsp;<a href="#">西虹市首富</a>&nbsp;/&nbsp;<a href="#">高清</a></td>
+                            <td><h7>08.</h7><a href="#">&nbsp;都挺好</a>&nbsp;/&nbsp;<a href="#">更新至26集</a></td>
+                            <td><h7>09.</h7><a href="#">&nbsp;阿丽塔：战斗天使</a>&nbsp;/&nbsp;<a href="#">清晰</a></td>
+                            <td><h7>10.</h7><a href="#">&nbsp;海贼王</a>&nbsp;/&nbsp;<a href="#">更新至875集</a></td>
+                        </tr>
+                        <tr>
+
+                            <td><h7>11.</h7>&nbsp;<a href="#">斗罗大陆2 绝世唐门 荣耀篇 动态漫画&nbsp;/&nbsp;更新至17集</a></td>
+                            <td><h7>12.</h7>&nbsp;<a href="#">雄兵连之诸天降临</a>&nbsp;/&nbsp;<a href="#">更新至9集</a></td>
+                            <td><h7>13.</h7>&nbsp;<a href="#">东宫</a>&nbsp;/&nbsp;<a href="#">更新至40集</a></td>
+                            <td><h7>14.</h7>&nbsp;<a href="#">万界神主</a>&nbsp;/&nbsp;<a href="#">更新至13集</a></td>
+                        </tr>
+                        <tr>
+
+                            <td><h7>15.</h7>&nbsp;<a href="#">恐龙侵袭</a>&nbsp;/&nbsp;<a href="#">高清</a></td>
+                            <td><h7>16.</h7>&nbsp;<a href="#">老中医</a>&nbsp;/&nbsp;<a href="#">更新至40集</a></td>
+                            <td><h7>17.</h7>&nbsp;<a href="#">少年歌行</a>&nbsp;/&nbsp;<a href="#">更新至14集</a></td>
+                            <td><h7>18.</h7>&nbsp;<a href="#">穿越白色空间</a>&nbsp;/&nbsp;<a href="#">高清</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        /*左边广告栏的设置和右边分开*/
+    $(function () {
+            $("#center").click(function(){
+                $("#left").toggle();
+                $('#right').toggleClass('all');
+                $('#right').toggleClass('part');
+            });
+            /*点击不同颜色，切换导航栏的颜色*/
+        $("#blue").click(function () {
+            // alert("a");
+            $(".subnav").css("background-color","#1c7ab8");
+
+        });
+        $("#green").click(function () {
+            $(".subnav").css("background-color","green");
+
+        });
+        $("#red").click(function () {
+            $(".subnav").css("background-color","red");
+
+        });
+        $("#orange").click(function () {
+            $(".subnav").css("background-color","orange");
+
+        });
+        /*上面最新热门推荐鼠标放上去切换*/
+        $(".new_hot li").mouseenter(function(){
+           var i=$(".new_hot li").index(this);
+           $(".hotMain").eq(i).css({
+              'z-index':1
+           }).siblings().css({
+              'z-index':0
+           });
+        });
+        /*最新热门用ajax拿数据*/
+        $.ajax({
+            method:'get',
+            url:'http://localhost:3000/new_hot',
+            success:function (data) {
+                // alert("a");
+                var new_hot='';
+                data.forEach(function (value) {
+                new_hot +=`<div class="hotItem">
+                        <a href="${value.href}">${value.name}<img src="${value.img}" alt=""></a>
+                        <h4><a href="${value.href}">${value.moviename}</a></h4>
+                        <span>
+                            <h4>
+                            <a href="${value.href}">${value.name}</a>
+                            <a href="${value.href}">${value.name}</a>
+                            <a href="${value.href}">${value.name}</a>
+                            </h4>
+                        </span>`;
+            });
+            $(".hotItem").eq(0).html(new_hot);
+
+            },
+            error:function(err) {
+                console.error(err);
+            }
+        });
+
+        });
+    </script>
+</body>
+</html>
